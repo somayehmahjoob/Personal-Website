@@ -6,14 +6,14 @@
   --color-primary: #0050ff;
   --shadow-info: 0px 5px 8px rgba(0, 0, 0, 0.4),
     0 5px 3px rgba(255, 255, 255, 0.5);
-  --shadow-form: 5px 5px 10px rgba(0, 0, 0, 0.5),
-    0 5px 5px rgba(255, 255, 255, 0.5);
+  --shadow-box: 2px 2px 5px rgba(0, 0, 0, 0.3),
+    0 3px 6px rgba(255, 255, 255, 0.2);
   --uppercase: uppercase;
   --grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 }
 body {
   width: 100%;
-  min-width: 600px;
+  /* min-width: 600px; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 section {
@@ -31,8 +31,9 @@ button {
 a {
   text-decoration: none;
 }
-.container {
-  margin-top: 10px;
+.card {
+  max-width: 700px;
+  border: none;
 }
 /* header */
 
@@ -242,7 +243,7 @@ a {
   padding: 20px;
   width: 600px;
   background: #fff;
-  box-shadow: var(--shadow-form);
+  box-shadow: var(--shadow-box);
 }
 .contact-page .contact-page-text {
   display: flex;
@@ -310,6 +311,30 @@ a {
   font-weight: 800;
   text-transform: capitalize;
 }
+.content-title-name{
+  margin-left: 140px;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.content-title-name-second {
+  margin-left: 10px;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: end;
+}
+.content-title-name-thrid {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: start;
+}
+.resume {
+  margin-top: 13px;
+  margin-right: 125px;
+}
 .resume a{
   font-size: 18px;
   background-color: var(--color-primary);  
@@ -324,7 +349,47 @@ a {
   border:1px solid #000;
   background-color: #fff;
 }
+.card-body {
+  text-align: left;
+}
+.resume-card {
+  display: flex;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: var(--shadow-box);
+  margin: 10px auto;
+}
+.resume-date {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+.card-title {
+  font-weight: 400;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+}
+.resume-company {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
 
+.resume-list-group {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+.resume-list-group .square {
+  width: 12px;
+  height: 12px;
+}
+.list-group-item-action:active ,
+.list-group-item-action:hover{
+    background-color: var(--bg-info);
+}
 /* footer */
 
 .footer {
@@ -441,6 +506,13 @@ a {
   .footer-info-contact > * {
     flex: 1 1 200px;
     margin-bottom: 20px;
+  }
+  .resume-list-group {
+    font-size: 13px;
+  }
+  .resume-list-group .square {
+    width: 10px;
+    height: 10px;
   }
 }
 
