@@ -11,6 +11,11 @@
   --uppercase: uppercase;
   --grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 100%;
   min-width: 357px;
