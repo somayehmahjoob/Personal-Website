@@ -313,6 +313,7 @@ a {
 }
 .content-title-name {
   margin-left: 140px;
+  justify-content: center;
   font-size: 28px;
   font-weight: 800;
   text-transform: capitalize;
@@ -331,11 +332,11 @@ a {
   text-transform: capitalize;
   text-align: start;
 }
-.resume {
+.btn-resume {
   margin-top: 13px;
   margin-right: 125px;
 }
-.resume a {
+.btn-resume a {
   font-size: 18px;
   background-color: var(--color-primary);
   border: 2px solid var(--color-primary);
@@ -344,7 +345,7 @@ a {
   margin: 20px 10px;
   border-radius: 24px;
 }
-.resume a:hover {
+.btn-resume a:hover {
   color: #000;
   border: 1px solid #000;
   background-color: #fff;
@@ -452,6 +453,7 @@ a {
 .footer-info-contact > * {
   flex: 1 1 auto;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 .footer-info-contact h3 {
   font-size: 20px;
@@ -477,7 +479,100 @@ a {
 }
 
 /* Responsive */
-/* Small devices (landscape phones, 576px and up) */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .left-side .general-info {
+    right: -22%;
+  }
+  .content-title-name {
+    text-align: left;
+    margin-left: 85px;
+  }
+  .content-title-name-second {
+    text-align: start;
+    margin-left: 80px;
+  }
+  .btn-resume {
+    margin-right: 75px;
+    text-align: end;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .square {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .business {
+    display: block;
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .left-side .general-info {
+    right: -12%;
+  }
+  .details-info-description {
+    width: 90%;
+  }
+  .right-side {
+    padding: 45px 25px;
+    padding-left: 50px;
+  }
+  .content-title-name-second {
+    text-align: start;
+    margin-left: 0;
+  }
+  .content-title-name {
+    text-align: start;
+    margin-left: 3px;
+}
+  .btn-resume {
+    margin-right: 0;
+    text-align: end;
+  }
+  .footer-right .footer-info-contact {
+    text-align: left;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px */
+@media (max-width: 767px) {
+  .square {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .business {
+    display: block;
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .left-side .general-info {
+    right: -11%;
+  }
+  .details-info-description {
+    width: 90%;
+  }
+  .right-side {
+    padding: 45px 25px;
+    padding-left: 50px;
+  }
+  .content-title-name-second {
+    text-align: start;
+  }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
   .square {
     margin-right: 2px;
@@ -551,7 +646,13 @@ a {
     width: 100%;
     text-align: justify;
   }
+  .content-title-name-second {
+    text-align: start;
+  }
 }
+
+/* X-Small devices (portrait phones, less than 379px) */
+
 @media (max-width: 379px) {
   .details-info-buttons a {
     margin: 20px 2px;
@@ -568,25 +669,7 @@ a {
   .resume-card {
     padding: 10px 4px;
   }
+  .content-title-name-second {
+    text-align: start;
+  }
 }
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991.98px) {
-  .square {
-    margin-right: 2px;
-    width: 12px;
-    height: 12px;
-  }
-  .name {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .business {
-    display: block;
-    font-size: 14px;
-    margin-left: 0;
-  }
-  .left-side .general-info {
-    right: -27%;
-  }
-} */
