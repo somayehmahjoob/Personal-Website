@@ -429,6 +429,14 @@ a {
 .contact-form {
   max-width: 700px;
 }
+.contact-img {
+  margin: 0 auto;
+  width: 300px;
+}
+.contact-img img {
+  border-radius: 3px;  
+  max-width: 300px;
+}
 /* footer */
 
 .footer {
