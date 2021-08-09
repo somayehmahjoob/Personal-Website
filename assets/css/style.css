@@ -12,7 +12,10 @@
     0 3px 6px rgba(255, 255, 255, 0.2);
   --uppercase: uppercase;
   --grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-  --font-0 : normal normal bold 100px/1.4em "Poppins";
+  --font-menu: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  --font-header : normal normal bold 100px/1.4em "Poppins",sans-serif;
+  --font-subHeader : normal normal bold 25px/1.4em "Montserrat",sans-serif;
+  --font_paragraph: normal normal normal 17px/1.4em "Montserrat",sans-serif;
 }
 * {
   margin: 0;
@@ -109,7 +112,10 @@ a {
 .menu a:hover {
   color: var(--color-primary);
 }
-
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--color-primary);
+}
 /* content */
 .content {
   display: flex;
@@ -184,21 +190,20 @@ a {
   width: 100%;
 }
 .details-info .details-info-title {
-  font: var(--font-0);
+  font: var(--font-header);
 }
 .details-info .details-info-subtitle {
-  font-size: 22px;
-  font-weight: 700;
+  font: var(--font-subHeader);
   letter-spacing: 2px;
   opacity: 0.9;
-  line-height: 24px;
   margin: 20px auto;
 }
 .details-info .details-info-buttons {
   margin: 40px auto;
 }
 .details-info-buttons a {
-  padding: 14px 30px;
+  font-size: 14px;
+  padding: 10px 30px;
   margin: 20px 10px;
   border-radius: 24px;
   border: none;
@@ -226,11 +231,10 @@ a {
   color: #fff;
 }
 .details-info-description {
-  width: 50%;
+  width: 53%;
 }
 .details-info-description p {
-  font-size: 18px;
-  line-height: 24px;
+  font: var(--font_paragraph);
   color: #5d5d5d;
 }
 
