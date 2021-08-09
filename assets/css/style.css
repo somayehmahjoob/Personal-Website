@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700;800;900&display=swap');
 :root {
   --bg-primary: #e6dace;
   --bg-info: #f4ece6;
@@ -10,6 +12,7 @@
     0 3px 6px rgba(255, 255, 255, 0.2);
   --uppercase: uppercase;
   --grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+  --font-0 : normal normal bold 100px/1.4em "Poppins";
 }
 * {
   margin: 0;
@@ -19,12 +22,7 @@
 body {
   width: 100%;
   min-width: 357px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-section {
-  height: auto;
-  /* min-height: 700px; */
-  width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 ul {
   list-style: none;
@@ -45,10 +43,11 @@ a {
 .header {
   text-transform: var(--uppercase);
 }
-/* .header .logo-name {
-  display: inline-block;
-  float: left;
-  padding-left: 80px;
+/* .menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 } */
 .square {
   display: inline-block;
@@ -185,8 +184,7 @@ a {
   width: 100%;
 }
 .details-info .details-info-title {
-  font-size: 66px;
-  font-weight: 900;
+  font: var(--font-0);
 }
 .details-info .details-info-subtitle {
   font-size: 22px;
@@ -232,8 +230,10 @@ a {
 }
 .details-info-description p {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 24px;
+  color: #5d5d5d;
 }
+
 
 /* contact page */
 .contact-page {
@@ -242,58 +242,7 @@ a {
   width: 100%;
   /* min-height: 700px; */
 }
-/* .contact-form {
-  display: block;
-  margin: 50px auto;
-  padding: 20px;
-  width: 600px;
-  background: #fff;
-  box-shadow: var(--shadow-box);
-}
-.contact-page .contact-page-text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 50px 100px;
-}
-.contact-page .contact-page-description {
-  width: 50%;
-}
-.contact-page .contact-page-description p {
-  padding: 10px;
-  margin-right: 20px;
-  font-size: 18px;
-  line-height: 22px;
-  box-shadow: var(--shadow-info);
-  border-radius: 10px;
-  background: #fff;
-  padding: 10px 25px;
-}
-.contact-page-email {
-  margin: 20px auto;
-}
-.contact-page-email h2 {
-  display: inline-block;
-  margin-left: 100px;
-  font-size: 24px;
-  line-height: 30px;
-  text-decoration: underline;
-  color: var(--color-primary);
-}
-.contact-page-email a {
-  display: inline-block;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000;
-}
-.contact-page-email a:hover {
-  color: #fff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-}
-.contact-page-email a:visited {
-  color: #000;
-} */
+
 
 /* Pages */
 .content-body {
