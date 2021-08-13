@@ -24,7 +24,7 @@
 
 body {
   width: 100%;
-  min-width: 357px;
+  min-width: 360px;
   font-family: 'Montserrat', sans-serif;  
   overflow-x: hidden;
 }
@@ -53,6 +53,7 @@ a {
   left: 0;
   right: 0;
 } */
+
 .square {
   display: inline-block;
   margin-right: 12px;
@@ -450,6 +451,7 @@ a {
 /* Responsive */
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+
   .left-side .general-info {
     right: -22%;
   }
@@ -469,6 +471,9 @@ a {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .header span:nth-child(3){
+  display: none;
+  }
   .square {
     margin-right: 4px;
     width: 16px;
@@ -512,6 +517,9 @@ a {
 
 /* Small devices (landscape phones, less than 768px */
 @media (max-width: 767px) {
+  .header span:nth-child(3){
+  display: none;
+  }
   .square {
     margin-right: 4px;
     width: 16px;
@@ -543,6 +551,9 @@ a {
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
+  .header span:nth-child(3){
+  display: none;
+  }
   .square {
     margin-right: 2px;
     width: 14px;
@@ -623,6 +634,9 @@ a {
 /* X-Small devices (portrait phones, less than 379px) */
 
 @media (max-width: 379px) {
+  .header span:nth-child(3){
+  display: none;
+  }
   .details-info-buttons a {
     margin: 20px 2px;
   }
